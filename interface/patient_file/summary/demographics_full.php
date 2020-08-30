@@ -749,23 +749,6 @@ echo xlt($CapInstype); ?></a></li><?php
                 <td colspan=2>
                 </td><td></td><td></td>
             </tr>
-            <tr>
-                <td colspan=0><label class='required'><?php echo xlt('Accept Assignment'); ?></label></td>
-                <td class=required>:</td>
-                <td colspan=2>
-                    <select class='form-control' name=i<?php echo attr($i); ?>accept_assignment>
-                     <option value="TRUE" <?php if (strtoupper($result3{"accept_assignment"}) == "TRUE") {
-                            echo "selected";
-                                          }?>><?php echo xlt('YES'); ?></option>
-                     <option value="FALSE" <?php if (strtoupper($result3{"accept_assignment"}) == "FALSE") {
-                            echo "selected";
-                                           }?>><?php echo xlt('NO'); ?></option>
-                    </select>
-                </td>
-                <td></td><td></td>
-                <td colspan=2>
-                </td><td></td>
-            </tr>
       <tr>
         <td><label class='bold'><?php echo xlt('Secondary Medicare Type'); ?></label></td>
         <td class='bold'>:</td>
