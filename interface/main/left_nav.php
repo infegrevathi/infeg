@@ -1678,12 +1678,7 @@ if ($GLOBALS['gbl_portal_cms_enable'] && acl_check('patientportal', 'portal')) {
             <?php if (empty($GLOBALS['code_types']['IPPF']) && acl_check('encounters', 'coding_a')) {
                 genMiscLink('RTop', 'rep', '0', xl('Superbill'), 'reports/custom_report_range.php');
             } ?>
-            <?php if (acl_check('patients', 'demo')) {
-                genMiscLink('RTop', 'rep', '0', xl('Eligibility'), 'reports/edi_270.php');
-            } ?>
-            <?php if (acl_check('patients', 'demo')) {
-                genMiscLink('RTop', 'rep', '0', xl('Eligibility Response'), 'reports/edi_271.php');
-            } ?>
+            
                 <?php if (!$GLOBALS['disable_chart_tracker'] && acl_check('patients', 'appt')) {
                     genMiscLink('RTop', 'rep', '0', xl('Chart Activity'), 'reports/chart_location_activity.php');
                 } ?>
