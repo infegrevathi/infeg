@@ -145,7 +145,7 @@ $url = "open-emr.org/wiki/index.php/OpenEMR_".$open_emr_ver."_Users_Guide";
 <td style="margin:3px 0px 3px 0px;vertical-align:middle;">
         <div style='margin-left:10px; float:left; display:none' id="current_patient_block">
             <span class='text'><?php echo xlt('Patient'); ?>:&nbsp;</span><span class='title_bar_top' id="current_patient"><b><?php echo xlt('None'); ?></b></span>
-              <span class='text'><?php echo xlt('contact email'); ?>:&nbsp;</span><span class='title_bar_top' id="current_email"><b><?php echo xlt('revathipandiyarajan0@gmail.com'); ?></b></span>
+              <span class='text'><?php echo xlt('contact email'); ?>:&nbsp;</span><span class='title_bar_top' id="current_email" onclick="myFunction()"><b><?php echo xlt('revathipandiyarajan0@gmail.com'); ?></b></span>
         </div>
 </td>
 <td style="margin:3px 0px 3px 0px;vertical-align:middle;" align="left">
@@ -198,7 +198,10 @@ function changePassword() {
 
 </script>
 <script type="text/javascript">
-    
+function myFunction() {
+  var x = document.getElementsClassName("text data")[0].id;
+  document.getElementById("text_email").innerHTML = x;
+}
 </script>
 
 </body>
